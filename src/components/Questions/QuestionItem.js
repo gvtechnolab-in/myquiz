@@ -5,16 +5,22 @@ function QuestionItem({ key, question, answer, answers, showAnswer }) {
   return (
     <>
       {/* <h2>Question</h2> */}
-      <div key={key} className="flex flex-col mb-4">
-        <label for="name" className="inline-flex mb-2 text-sm text-gray-800">
-          <strong className="mr-2 ">Q: </strong>{" "}
-          <div><MarkDownString string={question} /></div>
-        </label>
+      <div key={key} className="mb-4">
+        <div for="name" className="inline-flex mb-2 text-sm text-gray-800">
+          <strong className="mr-2 ">Q: </strong>
+          <div>
+            <MarkDownString string={question} />
+          </div>
+        </div>
+      </div>
+      <div key={key} className="mb-4">
         {showAnswer === true && (
-          <label for="name" className="inline-flex mb-2 text-sm text-gray-800">
+          <div for="name" className="inline-flex mb-2 text-sm text-gray-800">
             <strong className="mr-2 ">A: </strong>{" "}
-            <div><MarkDownString string={answer} /></div>
-          </label>
+            <div>
+              <MarkDownString string={answer} />
+            </div>
+          </div>
         )}
         {/*{answers?.map((answerItem, index) => {
         return (
