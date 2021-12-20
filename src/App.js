@@ -14,7 +14,7 @@ function App() {
       <div className="antialiased sans-serif bg-gray-200 h-full">
         <div className="container mx-auto flex justify-between px-5 py-4">
           <div className="logo">My Quiz</div>
-          <ul className="flex">
+          <ul className="flex menulist">
             <li className="mr-6">
               <Link to={"/"} className="text-blue-500 hover:text-blue-800">
                 Home

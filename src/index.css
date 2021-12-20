@@ -17,3 +17,7 @@ code {
 }
 
 p{ margin: 0;}
+.menulist, .menulist li{
+  margin: 0;
+  list-style: none;
+}
