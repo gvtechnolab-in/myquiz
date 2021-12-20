@@ -122,7 +122,7 @@ function Questions(props) {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [tag]);
   return (
-    <div className="box border-2 p-3 text-center max-w-sm mt-2 mx-auto">
+    <div className="box p-3 text-center mt-2 mx-auto">
       {loading === true ? (
         "Loading..."
       ) : (

@@ -73,12 +73,12 @@ function Home(props) {
   }, []);
   return (
     <div className="p-3">
-      <div className="box border-2 text-center max-w-xs mt-2 mx-auto">
+      <div className="box text-center mt-2 mx-auto">
         {loading === true ? (
           "Loading..."
         ) : (
           <>
-            <h2>Tags</h2>
+            <h2 className="border-b-2">Tags</h2>
             {categories?.length > 0 &&
               categories?.map((item, index) => {
                 return (
@@ -86,7 +86,7 @@ function Home(props) {
                     onClick={() => setSelectedCat(item)}
                     className={`list-item-label cursor-pointer block ${
                       selectedCat._id === item._id
-                        ? "bg-indigo-600 text-white"
+                        ? "text-indigo-600"
                         : ""
                     }`}
                   >
